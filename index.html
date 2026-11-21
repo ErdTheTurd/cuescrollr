@@ -4,32 +4,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cuescrollr — Teleprompter for iPhone Duo and iPhone</title>
-  <meta name="description" content="Cuescrollr is a teleprompter for iPhone Duo and iPhone. Script on one screen, local camera preview on the other — or script over camera on a single iPhone. Fully offline.">
-  <link rel="canonical" href="https://cuescrollr.com/">
+  <meta name="description" content="Cuescrollr is an offline teleprompter for iPhone Duo and iPhone. Script on one screen, front-camera preview on the other — or script over the lens on a single iPhone.">
+  <link rel="canonical" href="https://erdtheturd.github.io/cuescrollr/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <meta name="theme-color" content="#0a0b0d">
+  <meta name="theme-color" content="#0D0D0F">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Cuescrollr">
   <meta property="og:title" content="Cuescrollr — Teleprompter for iPhone Duo and iPhone">
-  <meta property="og:description" content="A teleprompter for iPhone Duo and iPhone. Script library, smooth scroll, and a local front-camera preview — all on your device.">
-  <meta property="og:url" content="https://cuescrollr.com/">
+  <meta property="og:description" content="An offline teleprompter for iPhone Duo and iPhone. Script on one screen, front-camera preview on the other.">
+  <meta property="og:url" content="https://erdtheturd.github.io/cuescrollr/">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Cuescrollr">
-  <meta name="twitter:description" content="A teleprompter for iPhone Duo and iPhone. Fully offline.">
+  <meta name="twitter:description" content="An offline teleprompter for iPhone Duo and iPhone.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="index.html">
+      <a class="brand" href="./">
         <img src="favicon.svg" width="28" height="28" alt="">
         Cuescrollr
       </a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="#modes">Modes</a>
         <a href="#features">Features</a>
         <a href="privacy.html">Privacy</a>
         <a href="support.html">Support</a>
@@ -38,157 +38,213 @@
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="hero-kicker">iPhone Duo · iPhone</p>
-          <h1 id="hero-title">Cuescrollr</h1>
-          <p class="lede">A teleprompter that keeps your eyes on the camera.</p>
-          <p>Scroll your script while a local front-camera preview stays in view. Built for iPhone Duo’s two screens — and for a single iPhone when you need the script over the lens.</p>
-          <div class="cta-row">
-            <span class="btn-store" aria-disabled="true" role="text">
+          <p class="kicker">For iPhone Duo and iPhone</p>
+          <h1>Script on one screen. Camera on the other.</h1>
+          <span class="cue-rule" aria-hidden="true"><span class="cue-line"></span></span>
+          <p class="lede">Cuescrollr is an offline teleprompter. On iPhone Duo the script scrolls on one display while the other shows a front-camera preview and your controls. On a regular iPhone the script sits over the camera, near the lens.</p>
+          <p class="store">
+            <span class="btn-soon" aria-disabled="true">
               <span class="btn-kicker">Coming soon</span>
               <span class="btn-label">App Store</span>
             </span>
-          </div>
-          <p class="note">Works offline. Scripts and settings stay on your device.</p>
+          </p>
+          <p class="note">No account. No network. Scripts stay on this iPhone.</p>
         </div>
 
-        <div class="duo-stage">
-          <figure class="duo-device" aria-label="Illustration of a dual-screen teleprompter">
-            <div class="duo-hinge" aria-hidden="true"></div>
-            <div class="duo-screens">
-              <div class="panel panel--script" aria-hidden="true">
-                <div class="guide"></div>
-                <div class="script-scroll">
-                  <div class="script-lines">
-                    <span>Good morning.</span>
-                    <span>Thank you for joining us.</span>
-                    <span>Today we’ll walk through</span>
-                    <span>the plan for the week,</span>
-                    <span>then open the floor</span>
-                    <span>for questions.</span>
-                    <span>Take a breath.</span>
-                    <span>Look into the lens.</span>
-                    <span>Keep a steady pace.</span>
-                    <span>Pause when it helps.</span>
-                    <span>Good morning.</span>
-                    <span>Thank you for joining us.</span>
-                    <span>Today we’ll walk through</span>
-                    <span>the plan for the week,</span>
-                    <span>then open the floor</span>
-                    <span>for questions.</span>
+        <figure class="duo-figure">
+          <div class="duo-device" role="img" aria-label="Two iPhone screens side by side. The left screen shows a scrolling serif script with an amber guide line. The right screen shows a camera preview and a Controls card with Play, Speed 140 WPM, Type size 36 pt, and Mirror.">
+            <div class="phone" aria-hidden="true">
+              <div class="bezel">
+                <div class="screen script-screen">
+                  <p class="screen-title">Brief intro</p>
+                  <div class="script-stage">
+                    <div class="script-scroll">
+                      <p>Hi — thanks for being here.</p>
+                      <p>Today I’m walking through a short update in a clear, steady pace.</p>
+                      <p>Stay with the guide line, breathe, and keep your eyes soft toward the lens.</p>
+                      <p>Let’s begin.</p>
+                      <p>Hi — thanks for being here.</p>
+                      <p>Today I’m walking through a short update in a clear, steady pace.</p>
+                    </div>
+                    <div class="guide">
+                      <span class="guide-dot"></span>
+                      <span class="guide-line"></span>
+                      <span class="guide-dot"></span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="panel panel--preview" aria-hidden="true">
-                <div class="preview-frame">
-                  <div class="preview-silhouette"></div>
-                </div>
-                <div class="preview-controls">
-                  <span class="ctrl"></span>
-                  <span class="ctrl ctrl--accent"></span>
-                  <span class="ctrl"></span>
+            </div>
+            <div class="hinge" aria-hidden="true"></div>
+            <div class="phone" aria-hidden="true">
+              <div class="bezel">
+                <div class="screen camera-screen">
+                  <div class="preview">
+                    <div class="preview-room"></div>
+                    <div class="silhouette"></div>
+                    <p class="preview-tag">Camera preview</p>
+                  </div>
+                  <div class="controls-card">
+                    <p class="controls-heading">Controls</p>
+                    <div class="play-btn">Play</div>
+                    <div class="control-row">
+                      <span>Speed</span>
+                      <span class="control-value">140 WPM</span>
+                    </div>
+                    <div class="slider" style="--fill: 50%"><span class="slider-track"></span></div>
+                    <div class="control-row">
+                      <span>Type size</span>
+                      <span class="control-value">36 pt</span>
+                    </div>
+                    <div class="slider" style="--fill: 33%"><span class="slider-track"></span></div>
+                    <div class="mirror-row">
+                      <span>Mirror</span>
+                      <span class="toggle" aria-hidden="true"></span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </figure>
-          <p class="duo-caption">Script on one screen. Preview and controls on the other.</p>
+          </div>
+          <figcaption>CSS mockup of the iPhone Duo layout, drawn from the app.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="single-section" id="iphone" aria-labelledby="single-title">
+      <div class="wrap single-grid">
+        <div class="single-copy">
+          <h2 id="single-title">On a regular iPhone</h2>
+          <p>The script overlays the camera in a dimmed, rounded panel. Play and pause sit on the preview; Speed, Type size, and Mirror are in a controls sheet so they stay out of the read.</p>
         </div>
+        <figure class="single-figure">
+          <div class="phone phone-solo" role="img" aria-label="A single iPhone. A dimmed rounded panel of serif script with an amber guide line sits over a camera preview. A circular Play control is at the bottom.">
+            <div class="bezel" aria-hidden="true">
+              <div class="screen stacked-screen">
+                <div class="preview preview-fill">
+                  <div class="preview-room"></div>
+                  <div class="silhouette"></div>
+                </div>
+                <p class="screen-title screen-title-overlay">Brief intro</p>
+                <div class="script-overlay">
+                  <div class="script-stage script-stage-inset">
+                    <div class="script-scroll script-scroll-static">
+                      <p>Hi — thanks for being here.</p>
+                      <p>Today I’m walking through a short update in a clear, steady pace.</p>
+                      <p>Stay with the guide line, breathe, and keep your eyes soft toward the lens.</p>
+                      <p>Let’s begin.</p>
+                    </div>
+                    <div class="guide">
+                      <span class="guide-dot"></span>
+                      <span class="guide-line"></span>
+                      <span class="guide-dot"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="play-disc">
+                  <span class="play-icon"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption>CSS mockup of the single-iPhone layout, drawn from the app.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="section" id="modes" aria-labelledby="modes-title">
-      <div class="wrap">
-        <header class="section-head">
-          <h2 id="modes-title">Two ways to present</h2>
-          <p>Same teleprompter, shaped to the device in your hand.</p>
-        </header>
-        <div class="modes">
-          <article class="mode">
-            <h3>iPhone Duo</h3>
-            <p>The script scrolls on one screen while the other shows a local front-camera preview and your controls. Read and check framing without flipping the device.</p>
-          </article>
-          <article class="mode">
-            <h3>iPhone</h3>
-            <p>The script overlays the camera view. Controls sit in a panel so you can play, pause, and adjust without leaving the take.</p>
-          </article>
+    <section class="features" id="features" aria-labelledby="features-title">
+      <div class="wrap features-grid">
+        <div class="features-main">
+          <div class="features-head">
+            <h2 id="features-title">What's in the app</h2>
+            <p>These are the names the app uses.</p>
+          </div>
+          <ul class="feature-list">
+            <li>
+              <h3>Script library</h3>
+              <p>Open, add, or edit scripts on this iPhone. Starter scripts are titled “Brief intro” and “Product demo.” A footer in the library reads: “Stored only on this device. Cuescrollr works fully offline.”</p>
+            </li>
+            <li>
+              <h3>Auto-scroll</h3>
+              <p>The script moves at the speed you set. Play starts a 3-2-1 countdown; Pause stops it.</p>
+            </li>
+            <li>
+              <h3>Speed</h3>
+              <p>Labeled Speed, shown in WPM. Default 140. You can set 60 to 220.</p>
+            </li>
+            <li>
+              <h3>Type size</h3>
+              <p>Labeled Type size, shown in points. Default 36 pt. You can set 22 to 64.</p>
+            </li>
+            <li>
+              <h3>Mirror</h3>
+              <p>Flips the script for a reflected glass prompter.</p>
+            </li>
+            <li>
+              <h3>Reading guide</h3>
+              <p>An amber line with a dot at each end sits on the current phrase.</p>
+            </li>
+            <li>
+              <h3>Offline</h3>
+              <p>No sign-in, no analytics, no cloud. The front camera is a local preview only: not recorded, not uploaded.</p>
+            </li>
+          </ul>
         </div>
+
+        <figure class="library-figure">
+          <div class="phone phone-solo phone-library" role="img" aria-label="The script library screen. Navigation title Cuescrollr, a Scripts list with Brief intro and Product demo, and the footer Stored only on this device. Cuescrollr works fully offline.">
+            <div class="bezel" aria-hidden="true">
+              <div class="screen library-screen">
+                <div class="lib-bar">
+                  <span class="lib-icon info"></span>
+                  <span class="lib-icon plus"></span>
+                </div>
+                <p class="lib-wordmark">Cuescrollr</p>
+                <p class="lib-section">Scripts</p>
+                <div class="lib-row is-selected">
+                  <p class="lib-title">Brief intro <span class="check"></span></p>
+                  <p class="lib-preview">Hi — thanks for being here. Today I’m walking through a short update in a clear, steady pace.</p>
+                  <p class="lib-meta">34 words</p>
+                </div>
+                <div class="lib-row">
+                  <p class="lib-title">Product demo</p>
+                  <p class="lib-preview">Here’s a quick look at what this does. First, open your script from the library.</p>
+                  <p class="lib-meta">52 words</p>
+                </div>
+                <p class="lib-footer">Stored only on this device. Cuescrollr works fully offline.</p>
+              </div>
+            </div>
+          </div>
+          <figcaption>CSS mockup of the script library, drawn from the app.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="section" id="features" aria-labelledby="features-title">
+    <section class="privacy-band" aria-labelledby="privacy-band-title">
       <div class="wrap">
-        <header class="section-head">
-          <h2 id="features-title">Built for the read</h2>
-          <p>Everything you need to deliver cleanly — nothing that pulls you online.</p>
-        </header>
-        <ul class="features">
-          <li>
-            <strong>Script library</strong>
-            <span>Keep scripts on the device and open the one you need.</span>
-          </li>
-          <li>
-            <strong>Smooth auto-scroll</strong>
-            <span>Steady motion at a pace you set in words per minute.</span>
-          </li>
-          <li>
-            <strong>Play and pause</strong>
-            <span>Start, stop, and resume when you need a beat.</span>
-          </li>
-          <li>
-            <strong>Speed and font size</strong>
-            <span>Dial WPM and type size to match the room and the lens.</span>
-          </li>
-          <li>
-            <strong>Mirror</strong>
-            <span>Flip the script when you’re reading from a mirrored display.</span>
-          </li>
-          <li>
-            <strong>3-2-1 countdown</strong>
-            <span>A short count before the scroll begins.</span>
-          </li>
-          <li>
-            <strong>Reading guide</strong>
-            <span>A guide line keeps your eye on the current phrase.</span>
-          </li>
-          <li>
-            <strong>Works offline</strong>
-            <span>No account and no network required for the app’s features.</span>
-          </li>
-        </ul>
+        <h2 id="privacy-band-title" class="visually-hidden">Privacy</h2>
+        <p>Scripts stay in local storage on this iPhone. Cuescrollr does not use the network, analytics, or cloud sync. The front camera is shown only so you can check framing. <a href="privacy.html">Read the privacy policy.</a></p>
       </div>
     </section>
 
-    <section class="band" aria-labelledby="privacy-band-title">
-      <div class="wrap band-inner">
-        <h2 id="privacy-band-title">It stays on the phone</h2>
-        <p>Cuescrollr is offline-only. Scripts and settings never leave the device. The front camera is used only as a local presenter preview — it is not recorded or uploaded. Read the <a href="privacy.html">privacy policy</a>.</p>
-      </div>
-    </section>
-
-    <section class="cta" aria-labelledby="cta-title">
-      <div class="wrap cta-inner">
-        <h2 id="cta-title">Coming to the App Store</h2>
-        <p>Cuescrollr is in progress for iPhone Duo and iPhone. This site will list the store link when it’s ready.</p>
-        <span class="btn-store" aria-disabled="true" role="text">
-          <span class="btn-kicker">Coming soon</span>
-          <span class="btn-label">App Store</span>
-        </span>
+    <section class="closing">
+      <div class="wrap">
+        <p>Cuescrollr is being finished for iPhone Duo and iPhone. This site will link to the App Store when it’s available.</p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <div class="footer-row">
-        <a class="footer-brand" href="index.html">Cuescrollr</a>
-        <nav class="footer-links" aria-label="Footer">
-          <a href="privacy.html">Privacy</a>
-          <a href="support.html">Support</a>
-        </nav>
+    <div class="wrap footer-inner">
+      <p>&copy; 2026 Edward Dunn. Cuescrollr for iPhone.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <a href="mailto:support@cuescrollr.com">support@cuescrollr.com</a>
       </div>
-      <p class="footer-note">© 2026 Edward Dunn</p>
     </div>
   </footer>
 </body>

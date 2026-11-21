@@ -1,3 +1,3 @@
 # Cuescrollr
 
-Marketing site for Cuescrollr (cuescrollr.com), a teleprompter for iPhone Duo and iPhone. Static HTML and CSS only; published via GitHub Pages.
+Static marketing site for Cuescrollr, an offline teleprompter for iPhone Duo and iPhone. HTML and CSS only, published with GitHub Pages at https://erdtheturd.github.io/cuescrollr/.
